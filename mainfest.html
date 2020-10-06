@@ -4,174 +4,87 @@
 	<title>Login V6</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<style>
+	
+	</style>
 
 </head>
 <body>
+
 <div class="main-div">
 
-<div class="overlay-section2">
-<span style="color:white"> M&TBank </span>
-<span style="color:white;margin-left:336px"> Content Explorer </span>
-</div>
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">Manifest Creation</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Stage Manifest</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Report</button>
-</div>
-
-<div id="London" class="tabcontent">
-  <div class="overlay-section3">Transpose*</div>
-  <table style="width:100%" class="xyz" id="table2">
-  
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-     <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <th> </th>
-    <th></th>
-    <th></th>
-    <th></th>
-     <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-</table>
-
-<div class="dropdown">
-  <button class="dropbtn">Template</button>
-  <div class="dropdown-content">
-  <a href="#">IsActive</a>
-  <a href="#">Capture Date</a>
-  <a href="#">Payoff Date</a>
-  <a href="#">Alternate Account Number</a>
-  <a href="#">Application Code</a>
-  <a href="#">Application First Name</a>
-  <a href="#">Payoff Flag</a>
-  <a href="#">Capture GUID</a>
-  <a href="#">Case Identifier</a>
-  <a href="#">Document Sub Category</a>
-  <a href="#">Foreclosure Referral Package</a>
-  <a href="#">Investor</a>
-  <a href="#">LOB</a>
-  <a href="#">LOP</a>
-  <a href="#">MDR Document type</a>
-  <a href="#">MDR Document Category</a>
-  <a href="#">Mortgage Number</a>
-  <a href="#">Owned By</a>
-  <a href="#">Profile Number</a>
-  <a href="#">Property State</a>
-  <a href="#">Source</a>
-  <a href="#">TIN</a>
-  <a href="#">Trace Document Identifier</a>
-  <a href="#">Trace Session Identifier</a>
+    <div class="overlay-section2 d-flex  align-items-center">
+    <span style="color:white;float:left;margin-left:17px"> M&TBank </span>
+    <span style="color:white;margin-left:490px;"> Content Explorer </span>
+    </div>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'search')">Search</button>
+      <button class="tablinks" onclick="openCity(event, 'upload')">Upload</button>
+    </div>
+    
+    <div id="search" class="tabcontent">
+      <div class="overlay-section3">
+      
+      <div class="controls" id="profs"> 
+        <form class="input-append">
+            <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" value="New Search 5" type="text" placeholder="Type something" data-items="8"/><button id="b1" class="btn add-more btnsize" type="button">+</button></div>
+        </form>
+    
+    </div>
+    
+  </div> 
+  <div class="dropdown">
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Template
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Template1</a>
+      <a class="dropdown-item" href="#">Template2</a>
+      <a class="dropdown-item" href="#">Template3</a>
+    </div>
   </div>
-</div>
 
+  <div class="dropdown">
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      0
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Template1</a>
+      <a class="dropdown-item" href="#">Template2</a>
+      <a class="dropdown-item" href="#">Template3</a>
+    </div>
+  </div>
 
-</div>
-
-
-<div id="Paris" class="tabcontent">
-  <div class="overlay-section3">Transpose*</div>
-  <table style="width:100%" class="xyz" id="table2">
-  
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-     <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <th> </th>
-    <th></th>
-    <th></th>
-    <th></th>
-     <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-</table>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <div class="overlay-section3">Transpose*</div>
-  <table style="width:100%" class="xyz" id="table2">
-  
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-     <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <th> </th>
-    <th></th>
-    <th></th>
-    <th></th>
-     <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-</table>
-</div>
+  <div class="dropdown">
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Order Result By
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Template1</a>
+      <a class="dropdown-item" href="#">Template2</a>
+      <a class="dropdown-item" href="#">Template3</a>
+    </div>
+  </div>
 
 
 
-</div>
-	</div>
+  </div>
+    
+    
+    <div id="upload" class="tabcontent">
+      <div class="overlay-section3">Transpose*</div>
+      
+    </div>
+    
+    
+    </div>
+
+    <script>
 	
-	<script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -185,7 +98,41 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-</script>
 
+
+
+$(document).ready(function(){
+  var next = 1;
+  $(".add-more").click(function(e){
+      e.preventDefault();
+      var addto = "#field" + next;
+      var addRemove = "#field" + (next);
+      next = next + 1;
+      var newIn = '<input autocomplete="off" class="input form-control" value="New Search 5" id="field' + next + '" name="field' + next + '" type="text">';
+      var newInput = $(newIn);
+      var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btnsize remove-me" >-</button></div><div id="field">';
+      var removeButton = $(removeBtn);
+      $(addto).after(newInput);
+      $(addRemove).after(removeButton);
+      $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+      $("#count").val(next);  
+      
+          $('.remove-me').click(function(e){
+              e.preventDefault();
+              var fieldNum = this.id.charAt(this.id.length-1);
+              var fieldID = "#field" + fieldNum;
+              $(this).remove();
+              $(fieldID).remove();
+          });
+  });
+  
+
+  
+});
+
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
